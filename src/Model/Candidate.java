@@ -98,9 +98,9 @@ public class Candidate {
 
     @Override
     public String toString() {
-        return this.firstName + " " + this.lastName + "|" + this.birthDate + "|"
+        return "{" + this.firstName + " " + this.lastName + "|" + this.birthDate + "|"
                 + this.address + "|" + this.phone + "|" + this.email + "|"
-                + this.typeCandidate;
+                + this.typeCandidate + "}";
     }
 
 }
