@@ -43,6 +43,7 @@ public class CandidatesManager extends Menu<String>{
                 break;
             case 5:
                 System.out.println("Exit!!!");
+                System.exit(0);
                 return;
             default:
                 System.err.println("Please choose from 1 to 5");
@@ -65,8 +66,7 @@ public class CandidatesManager extends Menu<String>{
             String phone = Validation.checkInputPhone();
             System.out.print("Enter email: ");
             String email = Validation.checkInputEmail();
-            Candidate candidate = new Candidate(id, firstName, lastName,
-                    birthDate, address, phone, email, type);
+            Candidate candidate = new Candidate(id, firstName, lastName, birthDate, address, phone, email, type);
             
             if (Validation.checkIdExist(candidates, id)) {//check id
                 switch (type) {
@@ -131,7 +131,7 @@ public class CandidatesManager extends Menu<String>{
     }
     
     public static String inputGraduationRank(){
-        System.out.print("Enter graduation rank(1: Excellence,2: Good,3: Fair,4: Poor)");
+        System.out.print("Enter graduation rank(1: Excellence,2: Good,3: Fair,4: Poor): ");
         int input = Validation.checkInputIntLimit(1, 4);
 //        String graduationRank = Validation.checkInputGraduationRank();
         String graduationRank;
