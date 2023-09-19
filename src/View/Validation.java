@@ -85,21 +85,6 @@ public class Validation {
         }
     }
 
-    public static String checkInputGraduationRank() {
-        while (true) {
-            String result = checkInputString();
-            if (result.equalsIgnoreCase("Excellence")
-                    || result.equalsIgnoreCase("Good")
-                    || result.equalsIgnoreCase("Fair")
-                    || result.equalsIgnoreCase("Poor")) {
-                return result;
-            } else {
-                System.err.println("Please input string: Excellence, Good, Fair, Poor");
-                System.out.print("Enter again: ");
-            }
-        }
-    }
-
     public static boolean checkIdExist(ArrayList<Candidate> candidates, String id) {
         for (Candidate candidate : candidates) {
             if (candidate.getId().equalsIgnoreCase(id)) {
