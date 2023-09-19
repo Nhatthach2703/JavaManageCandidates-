@@ -133,7 +133,6 @@ public class CandidatesManager extends Menu<String>{
     public static String inputGraduationRank(){
         System.out.print("Enter graduation rank(1: Excellence,2: Good,3: Fair,4: Poor): ");
         int input = Validation.checkInputIntLimit(1, 4);
-//        String graduationRank = Validation.checkInputGraduationRank();
         String graduationRank;
         switch (input) {
             case 1:
