@@ -4,16 +4,10 @@
  */
 package Controller;
 
-import Common.Library;
 import Model.Candidate;
-import Model.Experience;
-import Model.Fresher;
-import Model.Intern;
 import Repository.CandidateRepository;
 import View.Menu;
-import View.Validation;
 import java.util.ArrayList;
-import java.util.Calendar;
 import Repository.ICandidateRepository;
 
 /**
