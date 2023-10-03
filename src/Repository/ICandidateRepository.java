@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author Xuan Vinh
  */
-public interface ICandidateRepositoy {
+public interface ICandidateRepository {
     void createNewCandidate(ArrayList<Candidate> candidates, int type);
     
     void searchCandidate(ArrayList<Candidate> candidates);

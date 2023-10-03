@@ -4,7 +4,7 @@
  */
 package Repository;
 
-import DataAcess.CadidateDAO;
+import DataAcess.CandidateDAO;
 import Model.Candidate;
 import java.util.ArrayList;
 
@@ -12,7 +12,7 @@ import java.util.ArrayList;
  *
  * @author Xuan Vinh
  */
-public class CandidateRepository implements ICandidateRepositoy{
+public class CandidateRepository implements ICandidateRepository{
     private ArrayList<Candidate> candidates;
 
     public CandidateRepository() {
@@ -21,12 +21,12 @@ public class CandidateRepository implements ICandidateRepositoy{
 
     @Override
     public void createNewCandidate(ArrayList<Candidate> candidates, int type) {
-        CadidateDAO.Instance().createNewCandidate(candidates, type);
+        CandidateDAO.Instance().createNewCandidate(candidates, type);
     }
 
     @Override
     public void searchCandidate(ArrayList<Candidate> candidates) {
-        CadidateDAO.Instance().searchCandidate(candidates);
+        CandidateDAO.Instance().searchCandidate(candidates);
     }
     
     

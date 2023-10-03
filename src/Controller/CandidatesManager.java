@@ -10,18 +10,18 @@ import Model.Experience;
 import Model.Fresher;
 import Model.Intern;
 import Repository.CandidateRepository;
-import Repository.ICandidateRepositoy;
 import View.Menu;
 import View.Validation;
 import java.util.ArrayList;
 import java.util.Calendar;
+import Repository.ICandidateRepository;
 
 /**
  *
  * @author Xuan Vinh
  */
 public class CandidatesManager extends Menu<String>{
-    private ICandidateRepositoy candidateRepository;
+    private ICandidateRepository candidateRepository;
     static String[] mc = new String[]{"Experience", "Fresher", "Internship", "Searching", "Exit"};
     ArrayList<Candidate> candidates = new ArrayList();
     

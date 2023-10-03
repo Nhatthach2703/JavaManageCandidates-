@@ -16,13 +16,13 @@ import java.util.Calendar;
  *
  * @author Xuan Vinh
  */
-public class CadidateDAO {
-    private static CadidateDAO instance = null;
-    public static  CadidateDAO Instance() {
+public class CandidateDAO {
+    private static CandidateDAO instance = null;
+    public static  CandidateDAO Instance() {
         if (instance == null){
-            synchronized (CadidateDAO.class) {
+            synchronized (CandidateDAO.class) {
                 if(instance == null){
-                    instance = new CadidateDAO();
+                    instance = new CandidateDAO();
                 }
             }
         }
